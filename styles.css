@@ -90,11 +90,6 @@ header {
     justify-content: center;
 }
 
-#portfolio {
-    padding: 50px 10px;
-    background-color: #F8FAFC;
-}
-
 .section-header {
     text-align: center;
     display: flex;
@@ -120,4 +115,203 @@ header {
     padding: 0px 20px;
     margin-top: 20px;
     max-width: 360px;
+}
+
+#portfolio {
+    padding: 50px 10px;
+    background-color: #F8FAFC;
+}
+
+.project-grid {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #00000030;
+    border-radius: 10px;
+}
+
+.project-image {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.project-info {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project-description {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.project-technologies {
+    margin: 20px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.technology {
+    color: #3B82F6;
+    font-weight: 700;
+    font-size: 12px;
+    background-color: #3B82F620;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#skills {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.skills-container {
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.skill-category {
+    background-color: #F8FAFC;
+    border-radius: 15px;
+    padding: 20px 50px
+}
+
+.skill-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.skill-icon-container {
+    width: 48px;
+    height: 48px;
+    background-color: #3B82F620;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.skill-list {
+    font-size: 12px;
+    font-weight: 300;
+    margin: 10px 20px;
+    line-height: 1.5;
+}
+
+#testimonials {
+    padding: 0 20px;
+    background-color: #F8FAFC;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 60px 30px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.testimonial-icon {
+    width: 56px;
+    height: 56px;
+}
+
+.testimonial-quote {
+    font-size: 16px;
+    font-weight: 400;
+    color: #64748B;
+    line-height: 1.5;
+}
+
+.testimonial-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonial-name {
+    font-size: 18px;
+}
+
+.testimonial-role {
+    font-size: 14px;
+    color: #64748B;
+}
+
+#footer {
+    background-color: #F8FAFC;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-section {
+    padding: 0 30px;
+}
+
+.footer-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    font-size: 16px;
+    color: #64748B;
+}
+
+.social-links {
+    list-style: none;
+    line-height: 2;
+}
+
+.social-container {
+    display: flex;
+    gap: 45px;
+}
+
+.social-item {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
