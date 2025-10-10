@@ -1,377 +1,451 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/webp" href="images/whatsapp.webp" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Meu novo título</title>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header>
+      <h4 id="name">Rafael Ribeiro</h4>
 
-        <h4 id="name">Rafael Ribeiro</h4>
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="menu-burger"
+      >
+        <path
+          d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z"
+          fill="black"
+        />
+      </svg>
 
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" fill="black" />
-        </svg>
-
+      <ul class="nav-menu" id="navMenu">
+        <li>
+          <a href="index.html" class="nav-link active">Início</a>
+        </li>
+        <li>
+          <a href="about.html" class="nav-link">Sobre</a>
+        </li>
+        <li>
+          <a href="index.html#portfolio" class="nav-link">Portfólio</a>
+        </li>
+        <li>
+          <a href="index.html#skills" class="nav-link">Habilidades</a>
+        </li>
+        <li>
+          <a href="index.html#testimonials" class="nav-link">Depoimentos</a>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-link">Contato</a>
+        </li>
+      </ul>
     </header>
 
     <main>
+      <section id="hero-section">
+        <img src="images/perfil.jpg" alt="Minha foto" class="hero-image" />
 
-        <section id="hero-section">
+        <h1 class="hero-title">Rafael Ribeiro</h1>
 
-            <img src="images/perfil.jpg" alt="Minha foto" class="hero-image" />
+        <h2 class="hero-subtitle">Desenvolvedor Web Full Stack</h2>
 
-            <h1 class="hero-title">Rafael Ribeiro</h1>
+        <p class="hero-description">
+          Criando expectativas digitais modernas e intuitivas que conectam
+          pessoas e tecnologia.
+        </p>
 
-            <h2 class="hero-subtitle">Desenvolvedor Web Full Stack</h2>
+        <div class="hero-buttons">
+          <img src="images/icons/phone.svg" alt="Telefone" />
 
-            <p class="hero-description">Criando expectativas digitais modernas e intuitivas que conectam pessoas e
-                tecnologia.</p>
+          <a href="https://brclick.art.br/" class="hero-button"
+            >Entre em contato</a
+          >
+        </div>
 
-            <div class="hero-buttons">
+        <div class="hero-social-links">
+          <a href="https://github.com" target="_blank" class="hero-link">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2C10.6868 2 9.38642 2.25866 8.17317 2.7612C6.95991 3.26375 5.85752 4.00035 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21C9.5 20.77 9.5 20.14 9.5 19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C18 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26C14.5 19.6 14.5 20.68 14.5 21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2Z"
+                fill="black"
+              />
+            </svg>
+          </a>
 
-                <img src="images/icons/phone.svg" alt="Telefone" />
+          <a href="https://www.linkedin.com" target="_blank" class="hero-link">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z"
+                fill="black"
+              />
+            </svg>
+          </a>
 
-                <a href="https://brclick.art.br/" class="hero-button">Entre em contato</a>
+          <a href="https://whatsapp.com" target="_blank" class="hero-link">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z"
+                fill="black"
+              />
+            </svg>
+          </a>
 
+          <a href="mailto:rafael@gmail.com" target="_blank" class="hero-link">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 8L12 13L4 8V6L12 11L20 6M20 4H4C2.89 4 2 4.89 2 6V18C2 18.5304 2.21071 19.0391 2.58579 19.4142C2.96086 19.7893 3.46957 20 4 20H20C20.5304 20 21.0391 19.7893 21.4142 19.4142C21.7893 19.0391 22 18.5304 22 18V6C22 4.89 21.1 4 20 4Z"
+                fill="black"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <div class="section-header">
+          <h2 class="section-title">Projetos em Destaque</h2>
+
+          <div class="section-divider"></div>
+
+          <p class="section-description">
+            Uma seleção dos meus trabalhos mais recentes e projetos que
+            demonstram minhas habilidades.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <div class="project-card">
+            <img
+              src="images/projeto-01.jpg"
+              alt="Projeto Ecommerce"
+              class="project-image"
+            />
+
+            <div class="project-info">
+              <h3 class="project-title">E-commerce</h3>
+
+              <p class="project-description">
+                Plataforma completa de e-commerce com painel administrativo e
+                integração de pagamentos.
+              </p>
+
+              <div class="project-technologies">
+                <span class="technology">HTML5</span>
+                <span class="technology">CSS3</span>
+                <span class="technology">JavaScript</span>
+                <span class="technology">Figma</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="images/projeto-02.jpg"
+              alt="Projeto Dashboard"
+              class="project-image"
+            />
+
+            <div class="project-info">
+              <h3 class="project-title">Dashboard</h3>
+
+              <p class="project-description">
+                Dashboard para visualização de dados e métricas em tempo real.
+              </p>
+
+              <div class="project-technologies">
+                <span class="technology">HTML5</span>
+                <span class="technology">CSS3</span>
+                <span class="technology">JavaScript</span>
+                <span class="technology">Figma</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="images/projeto-03.jpg"
+              alt="Projeto Aplicação Mobile"
+              class="project-image"
+            />
+
+            <div class="project-info">
+              <h3 class="project-title">Aplicação Mobile</h3>
+
+              <p class="project-description">
+                Site desenvolvido para dispositivos móveis.
+              </p>
+
+              <div class="project-technologies">
+                <span class="technology">HTML5</span>
+                <span class="technology">CSS3</span>
+                <span class="technology">JavaScript</span>
+                <span class="technology">Figma</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="section-header">
+          <h2 class="section-title">Habilidades e Tecnologias</h2>
+
+          <div class="section-divider"></div>
+
+          <p class="section-description">
+            Ferramentas e tecnologias que utilizo no meu dia a dia.
+          </p>
+        </div>
+
+        <div class="skills-container">
+          <div class="skill-category">
+            <div class="skill-card">
+              <div class="skill-icon-container">
+                <img
+                  src="images/icons/front-end.svg"
+                  alt="Front-End"
+                  class="skill-icon"
+                />
+              </div>
+
+              <h3 class="skill-title">Front-End</h3>
             </div>
 
-            <div class="hero-social-links">
+            <ul class="skill-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
 
-                <a href="https://github.com" target="_blank" class="hero-link">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12 2C10.6868 2 9.38642 2.25866 8.17317 2.7612C6.95991 3.26375 5.85752 4.00035 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21C9.5 20.77 9.5 20.14 9.5 19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C18 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26C14.5 19.6 14.5 20.68 14.5 21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2Z"
-                            fill="black" />
-                    </svg>
-                </a>
+          <div class="skill-category">
+            <div class="skill-card">
+              <div class="skill-icon-container">
+                <img src="images/icons/design.svg" alt="Design" />
+              </div>
 
-                <a href="https://www.linkedin.com" target="_blank" class="hero-link">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z"
-                            fill="black" />
-                    </svg>
-                </a>
-
-                <a href="https://whatsapp.com" target="_blank" class="hero-link">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z"
-                            fill="black" />
-                    </svg>
-                </a>
-
-                <a href="mailto:rafael@gmail.com" target="_blank" class="hero-link">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M20 8L12 13L4 8V6L12 11L20 6M20 4H4C2.89 4 2 4.89 2 6V18C2 18.5304 2.21071 19.0391 2.58579 19.4142C2.96086 19.7893 3.46957 20 4 20H20C20.5304 20 21.0391 19.7893 21.4142 19.4142C21.7893 19.0391 22 18.5304 22 18V6C22 4.89 21.1 4 20 4Z"
-                            fill="black" />
-                    </svg>
-                </a>
-
+              <h3 class="skill-title">Design</h3>
             </div>
 
-        </section>
+            <ul class="skill-list">
+              <li>Figma</li>
+              <li>Adobe XD</li>
+              <li>Canva</li>
+              <li>UI/UX Design</li>
+            </ul>
+          </div>
 
-        <section id="portfolio">
+          <div class="skill-category">
+            <div class="skill-card">
+              <div class="skill-icon-container">
+                <img src="images/icons/outros.svg" alt="Outros" />
+              </div>
 
-            <div class="section-header">
-                <h2 class="section-title">Projetos em Destaque</h2>
-
-                <div class="section-divider"></div>
-
-                <p class="section-description">Uma seleção dos meus trabalhos mais recentes e projetos que demonstram
-                    minhas habilidades.</p>
+              <h3 class="skill-title">Outros</h3>
             </div>
 
-            <div class="project-grid">
+            <ul class="skill-list">
+              <li>Acessibilidade</li>
+              <li>Performance</li>
+              <li>Git</li>
+              <li>Testes</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-                <div class="project-card">
+      <section id="testimonials">
+        <div class="section-header">
+          <h2 class="section-title">O que dizem sobre mim</h2>
 
-                    <img src="images/projeto-01.jpg" alt="Projeto Ecommerce" class="project-image" />
+          <div class="section-divider"></div>
 
-                    <div class="project-info">
+          <p class="section-description">
+            Feedback de clientes e parceiros com quem tive o prazer de
+            trabalhar.
+          </p>
+        </div>
 
-                        <h3 class="project-title">E-commerce</h3>
+        <div class="testimonials-container">
+          <div class="testimonial-card">
+            <img
+              src="images/icons/depoimento.svg"
+              alt="Depoimento 1"
+              class="testimonial-icon"
+            />
 
-                        <p class="project-description">Plataforma completa de e-commerce com painel administrativo e
-                            integração de pagamentos.</p>
+            <blockquote class="testimonial-quote">
+              “Trabalhar com este profissional foi excepcional. Entregou um
+              produto além das expectativas, com atenção aos detalhes e
+              excelente comunicação durante todo o projeto.”
+            </blockquote>
 
-                        <div class="project-technologies">
-                            <span class="technology">HTML5</span>
-                            <span class="technology">CSS3</span>
-                            <span class="technology">JavaScript</span>
-                            <span class="technology">Figma</span>
-                        </div>
+            <div class="testimonial-author">
+              <img
+                src="images/depoimento.jpeg"
+                alt="Depoimento 1"
+                class="testimonial-image"
+              />
 
-                    </div>
+              <div>
+                <h3 class="testimonial-name">Maria Silva</h3>
 
-                </div>
-
-                <div class="project-card">
-
-                    <img src="images/projeto-02.jpg" alt="Projeto Dashboard" class="project-image" />
-
-                    <div class="project-info">
-
-                        <h3 class="project-title">Dashboard</h3>
-
-                        <p class="project-description">Dashboard para visualização de dados e métricas em tempo real.
-                        </p>
-
-                        <div class="project-technologies">
-                            <span class="technology">HTML5</span>
-                            <span class="technology">CSS3</span>
-                            <span class="technology">JavaScript</span>
-                            <span class="technology">Figma</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="project-card">
-
-                    <img src="images/projeto-03.jpg" alt="Projeto Aplicação Mobile" class="project-image" />
-
-                    <div class="project-info">
-
-                        <h3 class="project-title">Aplicação Mobile</h3>
-
-                        <p class="project-description">Site desenvolvido para dispositivos móveis.
-                        </p>
-
-                        <div class="project-technologies">
-                            <span class="technology">HTML5</span>
-                            <span class="technology">CSS3</span>
-                            <span class="technology">JavaScript</span>
-                            <span class="technology">Figma</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
+                <span class="testimonial-role">CEO, TechStart</span>
+              </div>
             </div>
+          </div>
 
-        </section>
+          <div class="testimonial-card">
+            <img
+              src="images/icons/depoimento.svg"
+              alt="Depoimento 1"
+              class="testimonial-icon"
+            />
 
-        <section id="skills">
+            <blockquote class="testimonial-quote">
+              “Habilidades técnicas impressionantes combinadas com uma
+              compreensão profunda de UX. O resultado foi uma aplicação que
+              nossos usuários adoram usar.”
+            </blockquote>
 
-            <div class="section-header">
-                <h2 class="section-title">Habilidades e Tecnologias</h2>
+            <div class="testimonial-author">
+              <img
+                src="images/depoimento.jpeg"
+                alt="Depoimento 1"
+                class="testimonial-image"
+              />
 
-                <div class="section-divider"></div>
+              <div>
+                <h3 class="testimonial-name">João Santos</h3>
 
-                <p class="section-description">Ferramentas e tecnologias que utilizo no meu dia a dia.</p>
+                <span class="testimonial-role">CFO, TechStart</span>
+              </div>
             </div>
+          </div>
 
-            <div class="skills-container">
+          <div class="testimonial-card">
+            <img
+              src="images/icons/depoimento.svg"
+              alt="Depoimento 1"
+              class="testimonial-icon"
+            />
 
-                <div class="skill-category">
+            <blockquote class="testimonial-quote">
+              “A colaboração foi perfeita! Conseguiu transformar nossos designs
+              em código pixel-perfect, mantendo a performance e acessibilidade
+              em primeiro lugar.”
+            </blockquote>
 
-                    <div class="skill-card">
+            <div class="testimonial-author">
+              <img
+                src="images/depoimento.jpeg"
+                alt="Depoimento 1"
+                class="testimonial-image"
+              />
 
-                        <div class="skill-icon-container">
-                            <img src="images/icons/front-end.svg" alt="Front-End" class="skill-icon" />
-                        </div>
+              <div>
+                <h3 class="testimonial-name">Ana Costa</h3>
 
-                        <h3 class="skill-title">Front-End</h3>
-                    </div>
-
-                    <ul class="skill-list">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                    </ul>
-
-                </div>
-
-                <div class="skill-category">
-
-                    <div class="skill-card">
-
-                        <div class="skill-icon-container">
-                            <img src="images/icons/design.svg" alt="Design" />
-                        </div>
-
-                        <h3 class="skill-title">Design</h3>
-                    </div>
-
-                    <ul class="skill-list">
-                        <li>Figma</li>
-                        <li>Adobe XD</li>
-                        <li>Canva</li>
-                        <li>UI/UX Design</li>
-                    </ul>
-
-                </div>
-
-                <div class="skill-category">
-
-                    <div class="skill-card">
-
-                        <div class="skill-icon-container">
-                            <img src="images/icons/outros.svg" alt="Outros" />
-                        </div>
-
-                        <h3 class="skill-title">Outros</h3>
-                    </div>
-
-                    <ul class="skill-list">
-                        <li>Acessibilidade</li>
-                        <li>Performance</li>
-                        <li>Git</li>
-                        <li>Testes</li>
-                    </ul>
-
-                </div>
-
+                <span class="testimonial-role">CTO, TechStart</span>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <footer id="footer">
+        <div class="footer-wrapper">
+          <div class="footer-section">
+            <h3 class="footer-heading">Rafael Ribeiro</h3>
+            <p class="footer-text">
+              Desenvolvedor Full Stack criando experiências digitais modernas e
+              intuitivas.
+            </p>
+          </div>
 
-        <section id="testimonials">
+          <div class="footer-section">
+            <h4 class="footer-heading">Links Rápidos</h4>
+            <ul class="social-links">
+              <li><a href="#" class="footer-text">Sobre</a></li>
+              <li><a href="#projetos" class="footer-text">Portfólio</a></li>
+              <li>
+                <a href="#habilidades" class="footer-text">Habilidades</a>
+              </li>
+              <li>
+                <a href="#depoimentos" class="footer-text">Depoimentos</a>
+              </li>
+              <li><a href="#" class="footer-text">Contato</a></li>
+            </ul>
+          </div>
 
-            <div class="section-header">
-                <h2 class="section-title">O que dizem sobre mim</h2>
+          <div class="footer-section">
+            <h4 class="footer-heading">Conecte-se</h4>
 
-                <div class="section-divider"></div>
+            <div class="social-container">
+              <a href="https://github.com" target="_blank" class="social-item">
+                <img src="images/icons/github-2.svg" alt="GitHub" />
+              </a>
 
-                <p class="section-description">Feedback de clientes e parceiros com quem tive o prazer de trabalhar.</p>
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                class="social-item"
+              >
+                <img src="images/icons/linkedin-2.svg" alt="LinkedIn" />
+              </a>
+
+              <a href="https://twitter.com" target="_blank" class="social-item">
+                <img src="images/icons/twitter.svg" alt="Twitter" />
+              </a>
+
+              <a
+                href="mailto:rafael@gmail.com"
+                target="_blank"
+                class="social-item"
+              >
+                <img src="images/icons/email-2.svg" alt="Email" />
+              </a>
             </div>
-
-            <div class="testimonials-container">
-
-                <div class="testimonial-card">
-
-                    <img src="images/icons/depoimento.svg" alt="Depoimento 1" class="testimonial-icon" />
-
-                    <blockquote class="testimonial-quote">“Trabalhar com este profissional foi excepcional. Entregou um
-                        produto além das
-                        expectativas,
-                        com
-                        atenção aos detalhes e excelente comunicação durante todo o projeto.”</blockquote>
-
-                    <div class="testimonial-author">
-                        <img src="images/depoimento.jpeg" alt="Depoimento 1" class="testimonial-image" />
-
-                        <div>
-                            <h3 class="testimonial-name">Maria Silva</h3>
-
-                            <span class="testimonial-role">CEO, TechStart</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="testimonial-card">
-
-                    <img src="images/icons/depoimento.svg" alt="Depoimento 1" class="testimonial-icon" />
-
-                    <blockquote class="testimonial-quote">“Habilidades técnicas impressionantes combinadas com uma
-                        compreensão profunda de UX. O
-                        resultado foi uma aplicação que nossos usuários adoram usar.”</blockquote>
-
-                    <div class="testimonial-author">
-                        <img src="images/depoimento.jpeg" alt="Depoimento 1" class="testimonial-image" />
-
-                        <div>
-                            <h3 class="testimonial-name">João Santos</h3>
-
-                            <span class="testimonial-role">CFO, TechStart</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="testimonial-card">
-
-                    <img src="images/icons/depoimento.svg" alt="Depoimento 1" class="testimonial-icon" />
-
-                    <blockquote class="testimonial-quote">“A colaboração foi perfeita! Conseguiu transformar nossos
-                        designs em código
-                        pixel-perfect,
-                        mantendo a performance e acessibilidade em primeiro lugar.”</blockquote>
-
-                    <div class="testimonial-author">
-                        <img src="images/depoimento.jpeg" alt="Depoimento 1" class="testimonial-image" />
-
-                        <div>
-                            <h3 class="testimonial-name">Ana Costa</h3>
-
-                            <span class="testimonial-role">CTO, TechStart</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <footer id="footer">
-
-            <div class="footer-section">
-                <h3 class="footer-heading">Rafael Ribeiro</h3>
-                <p class="footer-text">Desenvolvedor Full Stack criando experiências digitais modernas e intuitivas.</p>
-            </div>
-
-            <div class="footer-section">
-                <h4 class="footer-heading">Links Rápidos</h4>
-                <ul class="social-links">
-                    <li><a href="#" class="footer-text">Sobre</a></li>
-                    <li><a href="#projetos" class="footer-text">Portfólio</a></li>
-                    <li><a href="#habilidades" class="footer-text">Habilidades</a></li>
-                    <li><a href="#depoimentos" class="footer-text">Depoimentos</a></li>
-                    <li><a href="#" class="footer-text">Contato</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4 class="footer-heading">Conecte-se</h4>
-
-                <div class="social-container">
-                    <a href="https://github.com" target="_blank" class="social-item">
-                        <img src="images/icons/github-2.svg" alt="GitHub" />
-                    </a>
-
-                    <a href="https://www.linkedin.com" target="_blank" class="social-item">
-                        <img src="images/icons/linkedin-2.svg" alt="LinkedIn" />
-                    </a>
-
-                    <a href="https://twitter.com" target="_blank" class="social-item">
-                        <img src="images/icons/twitter.svg" alt="Twitter" />
-                    </a>
-
-                    <a href="mailto:rafael@gmail.com" target="_blank" class="social-item">
-                        <img src="images/icons/email-2.svg" alt="Email" />
-                    </a>
-
-                </div>
-
-            </div>
-
-        </footer>
-
+          </div>
+        </div>
+      </footer>
     </main>
-
-</body>
-
+  </body>
 </html>
